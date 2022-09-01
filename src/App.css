@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.nav {
+  border-Bottom: solid 1px;
+  padding-Bottom: 1rem;
+}
