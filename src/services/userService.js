@@ -1,14 +1,17 @@
+import envirement from "../endpointUrl";
+
 export async function getUsers() {
   try {
-    const response = await fetch("http://localhost:3080/api/users");
+    const response = await fetch(`${envirement.endpointUrl}/users`);
     return response.json();
   } catch (err) {
     return err;
   }
 }
+
 export async function getAdmins() {
   try {
-    const response = await fetch("http://localhost:3080/api/admins");
+    const response = await fetch(`${envirement.endpointUrl}/admins`);
     return response.json();
   } catch (err) {
     return err;
